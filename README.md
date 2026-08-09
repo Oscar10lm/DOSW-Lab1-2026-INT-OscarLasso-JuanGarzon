@@ -21,7 +21,8 @@ Ocurre un conflicto de fusión (merge conflict). Git detiene el proceso de *merg
 
 El comando que te permite ver el historial el historial de merges y ramas de forma grafica en consola es: *git log --graph --oneline --all*. Dibuja un diagrama ASCII con todas las ramas y uniones del repositorio.
 
-4. Explica la diferencia entre un commit y un push
+4. Explica la diferencia entre un commit y un push.
+
 El *commit* guarda una foto de los archivos locales del equipo, mientras que el *push* envia esa foto de los archivos locales hacia un servidor donde otras personas lo pueden ver (Github)
 
 5. ¿Para qué sirven git stash y git stash pop?
