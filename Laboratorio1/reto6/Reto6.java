@@ -8,5 +8,8 @@ public class Reto6 {
         List<String> comandos = entrada.listaComandos();
         comandos.stream()
                 .forEach(comando -> Maquina.ejecutarComando(comando));
+        
+        System.out.println("Todos los comandos: ");
+        Maquina.ejecutarTodos();
     }
 }
