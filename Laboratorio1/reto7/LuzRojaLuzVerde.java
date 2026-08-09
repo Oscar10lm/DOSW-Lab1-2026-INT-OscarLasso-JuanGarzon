@@ -18,10 +18,10 @@ public class LuzRojaLuzVerde {
         System.out.println("\nPrueba 1 - Luz Roja Luz Verde: ");
 
         StringBuilder m = new StringBuilder();
-        sobrevivientes.stream()
-                        .forEach(jugador -> m.append(jugador.getNombre() + " "));
+        sobrevivientes.stream().forEach(jugador -> m.append(jugador.getNombre() + "  "));
         m.append("PASAN");
         System.out.println(" " + m);
+        
         jugadores.stream().filter(jugador -> jugador.getEstado().equals("ELIMINADO")).forEach(jugador -> System.out.println(" Jugador " + jugador.getNumero() + " ELIMINADO"));
         return sobrevivientes;
     }

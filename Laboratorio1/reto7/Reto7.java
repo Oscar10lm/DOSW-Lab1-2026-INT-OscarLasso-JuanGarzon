@@ -23,10 +23,15 @@ public class Reto7 {
         premio += eliminadosRonda1 * 50_000_000L;
 
         //PRUEBA 2
+        List<Jugador> ronda2 = Dados.jugar(ronda1);
+
+        int eliminadosRonda2 = ronda1.size() - ronda2.size();
+
+        premio += eliminadosRonda2 * 50_000_000L;
 
         //PRUEBA 3
-        List<Jugador> ganadores = PuenteCristal.jugar(ronda1); //Cambiar ronda1 a ronda2 cuando se escriba
-        int eliminadosRonda3 = ronda1.size() - ganadores.size(); //Cambiar ronda1 a ronda2 cuando se escriba
+        List<Jugador> ganadores = PuenteCristal.jugar(ronda2);
+        int eliminadosRonda3 = ronda2.size() - ganadores.size();
         premio += eliminadosRonda3 * 100_000_000L;
 
         //Repartir premio

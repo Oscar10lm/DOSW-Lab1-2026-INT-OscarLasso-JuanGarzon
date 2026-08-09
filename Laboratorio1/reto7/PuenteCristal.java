@@ -4,6 +4,8 @@ import java.util.List;
 
 public class PuenteCristal {
     public static List<Jugador> jugar(List<Jugador> jugadores){
+        System.out.println("\nPrueba 3 - Puente de Cristal: ");
+        
         List<Jugador> sobrevivientes = jugadores.stream().filter(jugador -> {
                                                                             if (jugador.getNombre().length() < 5){
                                                                                 jugador.eliminar();
@@ -11,8 +13,6 @@ public class PuenteCristal {
                                                                             }
                                                                             return true;
                                                                         }).toList();
-
-        System.out.println("\nPrueba 3 - Puente de Cristal: ");
 
         StringBuilder m = new StringBuilder();
         sobrevivientes.stream()
