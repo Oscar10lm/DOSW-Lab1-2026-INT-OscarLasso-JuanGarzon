@@ -11,8 +11,8 @@ public class Entrada {
         System.out.println("Ingrese los números para " + tipo + " separados por comas:");
         String entrada = sc.nextLine();
         return Arrays.stream(entrada.split(","))
-                .map(String::trim)
-                .map(Integer::parseInt)
-                .collect(Collectors.toList());
+                     .map(String::trim)
+                     .map(Integer::parseInt)
+                     .collect(Collectors.toList());
     }
 }

@@ -20,6 +20,9 @@ public class Almacenador{
         Set<Integer> hashFiltrado = filtrarHashSet();
         Set<Integer> treeFiltrado = filtrarTreeSet();
 
-        Stream.concat(hashFiltrado.stream(),treeFiltrado.stream()).distinct().sorted().forEach(n -> System.out.println("Número en arena: " + n));
+        Stream.concat(hashFiltrado.stream(), treeFiltrado.stream())
+              .distinct()
+              .sorted()
+              .forEach(n -> System.out.println("Número en arena: " + n));
     }
 }

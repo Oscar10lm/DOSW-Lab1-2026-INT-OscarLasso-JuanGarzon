@@ -14,6 +14,5 @@ public class Reto5 {
         numerosTreeSet.stream().forEach(almacenador::almacenarTreeSet);
 
         almacenador.mostrarArena();
-
     }
 }
