@@ -27,11 +27,11 @@ public class Maquina {
         return Maquina.revertir(amplificado);
     }
 
-    public static String ejecutar(String mensaje){
+    public static void ejecutar(String mensaje){
         Function<String, String> protocolo = texto -> descifrar(texto);
 
         String resultado = protocolo.apply(mensaje);
 
-        return resultado;
+        System.out.println(resultado);
     }
 }

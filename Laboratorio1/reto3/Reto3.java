@@ -5,6 +5,6 @@ public class Reto3 {
         String mensaje = Entrada.leerMensaje();
         System.out.println("Canal A: '"  + Maquina.amplificar(mensaje) + "'");
         System.out.println("Descifrado final: ");
-        System.out.println(Maquina.ejecutar(mensaje));
+        Maquina.ejecutar(mensaje);
     }
 }
