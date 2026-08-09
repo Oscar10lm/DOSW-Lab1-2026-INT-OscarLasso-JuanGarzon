@@ -19,7 +19,15 @@ public class Almacenador{
 
     public void imprimirPar(){
         Map<String, Integer> resultado = Stream.concat(mapaHash.entrySet().stream(), tablaHash.entrySet().stream())
-                                                .collect(Collectors.toMap(entrada -> entrada.getKey().toUpperCase(), entrada -> entrada.getValue(), (valorMapa, valorTabla) -> valorTabla));
-        resultado.entrySet().stream().map(entrada -> "Clave: " + entrada.getKey() + " | Valor: " + entrada.getValue()).sorted().forEach(System.out::println);
+                                                .collect(Collectors.toMap(
+                                                    entrada -> entrada.getKey().toUpperCase(), 
+                                                    entrada -> entrada.getValue(), 
+                                                    (valorMapa, valorTabla) -> valorTabla
+                                                ));
+        
+        resultado.entrySet().stream()
+                    .map(entrada -> "Clave: " + entrada.getKey() + " | Valor: " + entrada.getValue())
+                    .sorted()
+                    .forEach(System.out::println);
     }
 }
